@@ -1,7 +1,24 @@
 aid: kaiheikeji
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kaiheikeji.png
 name: kaiheikeji
-description: kaiheikeji is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Kaiheikeji Digital (开黑科技) is a Chinese mobile entertainment and esports social platform
+  operating an online game "sparring"/companion marketplace, where players post demands (game, skill
+  level, and price) and qualified players selectively take orders to play alongside clients. Backed by
+  Qiming Venture Partners, which led a roughly $15M Series A+ round in 2018. The company operates a
+  consumer-facing mobile app rather than a public developer API program; no public API, developer portal,
+  or API documentation surface has been identified. This profile is maintained in the API Evangelist
+  network as a company record surfaced from the Qiming portfolio.
 url: https://raw.githubusercontent.com/api-evangelist/kaiheikeji/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Gaming
+- Esports
+- Social
+- Mobile
+- Marketplace
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kaiheikeji-domain-security.yml
 - type: Website
   url: https://kaiheikeji.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
